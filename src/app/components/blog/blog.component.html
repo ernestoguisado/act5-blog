@@ -12,50 +12,34 @@
             <h3>Crea tu noticia</h3>
             <div>
                 <label for="titulo">Título: </label>
-                <input type="text" name="titulo" placeholder="Introduce un título" >
+                <input type="text" id="titulo" name="titulo" placeholder="Introduce un título" [(ngModel)]="newNoticia.titulo">
             </div>
             <div>
                 <label for="imagen">Imagen: </label>
-                <input type="url"  name="imagen" placeholder="Dirección de la imagen">
+                <input type="text" id="imagen" name="imagen" placeholder="Dirección de la imagen" [(ngModel)]="newNoticia.imagen">
             </div>
             <div>
                 <label for="texto">Texto: </label>
-                <textarea name="texto" placeholder="Introduce aquí el texto de la noticia" rows="10" cols="50" ></textarea>
+                <textarea id="texto" name="texto" placeholder="Introduce aquí el texto de la noticia" rows="10" cols="50" [(ngModel)]="newNoticia.texto"></textarea>
             </div>
             <div>
-                <label for="Fecha">Título: </label>
-                <input type="date" name="fecha">
+                <label for="fecha">Fecha: </label>
+                <input type="date" id="fecha" name="fecha" [(ngModel)]="newNoticia.fecha">
             </div>
             <div>
-                <button class="boton">Crear</button>
+                <button (click)="crear()" class="boton">Crear</button>
             </div>
         </div>
     </section>
+    
 
-    <!-- Listado de noticias, a modo de ejemplo -->
-    <hr>
-    <section>
-        <h3>Listado de noticias</h3>
-        
-        <article>
-            <header>
-                <h3>Titulo</h3>
-            </header>
-            <section>
-                <figure>
-                    <img src="" alt="Descripción img">
-                </figure>
-                <p>Cuerpo de la noticia</p>
-            </section>
-            <footer>
-                <small>
-                    Posted on <time datetime="2023-07-07 T19:00">Julio 2023</time>
-                </small>
-            </footer>
-        </article>
+<section class="noticias__container" [innerHTML]="cargarDatos()">
 
-    </section>
+</section>
+
 </main>
+
+
 <footer >
     <p class="Autor">
         Ernesto Guisado Franco - 2023
