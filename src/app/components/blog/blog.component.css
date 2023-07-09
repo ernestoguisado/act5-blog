@@ -1,4 +1,102 @@
+body {
+    background-color: #E0F7FA;
+    font-family: Arial, sans-serif;
+    color: #006064;
+    
+}
+
+header {
+    background-color: #B2EBF2;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #4DD0E1;
+}
+
+h1 {
+    color: #006064;
+}
+
+h3 {
+    color: #006064;
+}
+
+.main {
+    padding: 20px;
+}
+
+.formulario {
+    background-color: #80DEEA;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.formulario input, 
+.formulario textarea, 
+.formulario button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #4DD0E1;
+}
+
+.formulario button {
+    background-color: #006064;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #004D40;
+}
+
 .noticias__container {
-    background-color: rgb(226, 255, 255);
-    width: 600px;
+    display: flexbox;
+    justify-items: center;
+    max-width: 400px;
+    margin-left: 40px;
+}
+
+.nueva__noticia {
+    background-color: #80DEEA;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.noticia__texto,
+.noticia__titulo,
+.noticia__texto-letras,
+.noticia__fecha-letras {
+    color: #006064;
+}
+
+.noticia__imagen {
+    width: 100%;
+}
+
+.noticia__imagen-foto {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #cdf2f7;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Autor {
+    color: #006064;
 }
