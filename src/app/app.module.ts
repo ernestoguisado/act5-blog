@@ -1,6 +1,9 @@
+//Librerias
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; 
 
+//componentes
 import { AppComponent } from './app.component';
 import { BlogComponent } from './components/blog/blog.component';
 
@@ -10,7 +13,8 @@ import { BlogComponent } from './components/blog/blog.component';
     BlogComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
